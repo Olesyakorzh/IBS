@@ -2,6 +2,9 @@ class Animal:
     
     def voice(self):
         pass
+    num_of_insts = 0
+    def __init__(self):
+        Animal.num_of_insts = Animal.num_of_insts + 1
     
 class Volf(Animal):
      def voice(self):
@@ -25,7 +28,11 @@ class Bird(Animal):
 bird = Bird()
 bird.voice()
 
-
+def print_num():
+    print(Animal.num_of_insts)
     
+print_num=staticmethod(print_num)
+
+print_num()
 
         
