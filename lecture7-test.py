@@ -17,8 +17,9 @@ class Barsik(Cat):
         print(self.sound)
         
 cat = Barsik()
-cat.eat()         
-        """
+cat.eat()    """     
+
+"""
 class Spam:
     num_of_insts = 0
   
@@ -30,7 +31,59 @@ def print_num():
 
 a = Spam()
 b = Spam()   
-print_num()
+print_num() """
 
+"""
+class Reverse:
+    def __init__(self, data):
+        self.data=data
+        self.index=len(data)
+    
+    def __iter__(self):
+        return self
+    
+    def __next__(self):
+        if self.index==0:
+            raise StopIteration
+        self.index-=1
+        return self.data[self.index]
+    
+for ch in Reverse('12345'):
+    print(ch)
+    
+rv = list(Reverse('12345'))
+print(rv)   
+
+"""
+"""class Singleton(object):  
+    def __new__(cls, *args, **kv):
+        if not hasattr(cls, '_instance'):
+            orig=super(Singleton, cls)
+            cls._instance=orig.__new__(cls, *args, **kv)
+        return cls._instance
+
+a=Singleton()
+print(id(a))
+b=Singleton()
+print(id(b))
+        """ 
+"""       
+class Obj(object):
+    __slots__ = ['a', 'b']
+    
+x = Obj()
+x.a = 1
+print(x.a)
+"""
+class Obj:
+    def __call__(self, a):
+        print(a)
+        
+    a=Obj()
+    a(100)
+    
+    
+
+    
 
       
