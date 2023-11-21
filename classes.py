@@ -33,3 +33,25 @@ tom.give_raise(0.10)
 print(tom)
 
 
+__name__
+__module__
+__dict__
+__bases__
+__doc__
+
+###
+__dict__
+__class__
+__init__
+__del__
+__cmp__
+__hash__
+__getattr__
+__setattr__
+__delattr__
+__call__
+###
+__repr__
+__str__
+__oct__hex__complex__int__long__float__
+
