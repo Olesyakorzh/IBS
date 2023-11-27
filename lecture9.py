@@ -4,13 +4,10 @@ from time import sleep
 def Flow(thread_name):
     ###todo. Сообщение, что старт потока 1.
     for i in range(10, 0, -1):
-        print(f'Из первого потока: {i}')
+        print(f'Поток"{thread_name}" - {i}')
         sleep(1)
         ###todo. Сообщение конца потока 1.
-       
-    for i in range(10, 0, -1):
-        print(f'Из второго потока: {i}')
-        sleep(1)  
+        
          ###todo. Сообщение конца потока 2.
 ### Формирование задач для запуска в параллель.
 
